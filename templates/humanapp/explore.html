@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h7>{{ human.first_name | title }}</h7>
+<h6>{{ human.second_name | title }}</h6>
+<img src="/{{human.avatar.url}}" alt="none">
+<br>
+<h8>{{ human.age }}</h8>
+<h8>{{ human.gender }}</h8>
+{% endblock %}
